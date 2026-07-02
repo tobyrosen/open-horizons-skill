@@ -1,6 +1,17 @@
 # open-horizons
 
+[![Release](https://img.shields.io/github/v/release/tobyrosen/open-horizons-skill?sort=semver&display_name=tag&label=release&style=flat-square)](https://github.com/tobyrosen/open-horizons-skill/releases/latest) [![CI](https://img.shields.io/github/actions/workflow/status/tobyrosen/open-horizons-skill/ci.yml?branch=main&label=fleet-ci&style=flat-square)](https://github.com/tobyrosen/open-horizons-skill/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/tobyrosen/open-horizons-skill?label=license&style=flat-square)](LICENSE) [![Type](https://img.shields.io/badge/type-claude--skill-6b46c1?style=flat-square)](#) [![Claude Skill](https://img.shields.io/badge/claude-skill-6b46c1?style=flat-square)](#)
+
 A Claude Code skill that acts as a pre-closure checkpoint for research, capability scans, and gap analyses. Run it before declaring any research task done.
+
+## Identity
+
+| Field | Value |
+|---|---|
+| What | A single Claude skill, `SKILL.md`, that forces five horizon-widening checks before an agent closes open-ended research or assessment work. |
+| For | Claude Code agents and maintainers who need to counter closure bias in research, tool discovery, skill reviews, and gap analysis. |
+| Type | claude-skill |
+| Status | experimental |
 
 ## The Problem It Solves
 
@@ -54,3 +65,31 @@ Next vector: Check the full skills catalog — only reviewed ~8 of 90+ skills
 ## Category
 
 `meta` — applies to every session and every domain. Not domain-specific.
+
+## Project Notes
+
+Maintainer and agent context lives in [AGENTS.md](AGENTS.md).
+
+Design decisions are recorded in [docs/decisions](docs/decisions).
+
+The Claude skill behavior contract lives in [SKILL.md](SKILL.md).
+
+## Versioning and Releases
+
+This repo uses Semantic Versioning, Conventional Commits, and release-please Release PRs.
+
+The latest released version is shown in the release badge at the top of this README. The badge updates automatically from GitHub Releases after a Release PR is approved and merged.
+
+Release tags use the format `vX.Y.Z`.
+
+## Contributing
+
+Use Conventional Commits for commit messages and PR titles.
+
+For Claude skills, `SKILL.md` is product behavior. Behavior-changing edits should use `feat:`, `fix:`, or breaking-change syntax, not `docs:`.
+
+Do not create release tags manually. Do not edit `CHANGELOG.md` manually for ordinary releases.
+
+## License
+
+This project is licensed under the terms in [LICENSE](LICENSE).
